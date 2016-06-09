@@ -1,0 +1,565 @@
+body {
+	background-color: #FEFFFF;
+	font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif
+}
+
+hr {
+	margin: 0px;
+}
+
+.navBar {
+	height: 80px;
+}
+
+.navInfoItem {
+	display: none;
+}
+
+.navbar-default .navbar-nav > li > a {
+	color: #909192;
+}
+
+.navbar-default .navbar-nav .homeButton > a {
+	color: #4D4E4F;
+	font-weight: 900;
+}
+
+#bs-example-navbar-collapse-1 {
+	z-index: 100;
+	background-image:-webkit-linear-gradient(to bottom, #E9EAEB, #BCBDBE);
+	background-image:linear-gradient(to bottom, #E9EAEB, #BCBDBE);
+}
+
+.navbar-default {
+	color: black;
+}
+
+.navbar-header {
+	width: 200px;
+	height: 90%;
+	margin-left: 12%;
+	margin-top: 8px;
+}
+
+.navbar-header img {
+	height: 80px;
+	padding: 0;
+}
+
+.navInfo {
+	height: 45px;
+	margin-top: 32px;
+	margin-right: 12%;
+}
+
+.navInfo li {
+	margin-left: 60px;
+	font-size: 12pt;
+}
+
+.container {
+	padding: 0px 0px;
+	width: 100%;
+	margin: auto;
+	margin-top: 85px;
+}
+
+/*绿色*/
+.blank_1 {
+	height: 15px;
+	background-image:-webkit-linear-gradient(to bottom, #C2EFA7, #D8FFBC);
+	background-image:linear-gradient(to bottom, #C2EFA7, #D8FFBC);
+}
+
+/*搜索*/
+.searchBox {
+	height: 150px;
+	background-color: #D8FFBC;
+}
+
+.searchForm {
+	width: 60%;
+	padding: 0px;
+	margin: 0px;
+	margin-left: 30%;
+	margin-top: 50px;
+}
+
+.input-group, .form-control, .input-group-btn, .btnSubmit {
+	border-radius: 0px;
+	margin: 0;
+}
+
+.input-group {
+	width: 600px;
+	height: 50px;
+}
+
+.form-control, .input-group-btn {
+	height: 50px;
+	margin: 0;
+}
+
+.input-group-btn .btnSubmit {
+	height: 50px;
+	width: 100px;
+	font-size: 18pt;
+	background-color: #AEAFB0;
+	border: 2px #AEAFB0 solid;
+}
+
+.form-control {
+	border: 2px #AEAFB0 solid;
+	border-left-width: 0px;
+}
+
+.btnSubmit {
+	color: #F6F7F8;
+}
+
+.searchIcon {
+	width: 5px;
+}
+
+.schoolLocation {
+	width: 100%;
+}
+
+.locationIcon, .locationInfo {
+	display: inline-block;
+	margin-top: 10px;
+}
+
+.input-group-addon {
+	border: 2px #AEAFB0 solid;
+	background: url("../pic/search.png") center center no-repeat white;
+	background-size: 65%;
+	border-right-width: 0px;
+}
+
+/*空白*/
+.blank_2 {
+	height: 60px;
+}
+
+.talkSquare {
+	width: 74%;
+	margin: auto;
+	border:1px solid #C6CBCB;
+	padding-bottom: 30px;
+	margin-bottom: 50px;
+}
+
+.rightPart {
+	width: 70%;
+	margin: auto;
+}
+
+.talkSquareTitle {
+	width: 100%;
+	height: 40px;
+	background-color: #A3EA66;
+	margin-bottom: 20px;
+}
+
+.titleIconAsk {
+	display: inline-block;
+}
+
+.titleIconAsk img {
+	width: 25px;
+	margin-top: -10px;
+	margin-left: 20px;
+}
+
+.newMoment {
+	display: inline-block;
+	font-size: 18pt;
+	color: #597764;
+	margin-top: 3px;
+}
+
+/*评论*/
+div.iconTalk, div.iconAsk, div.iconAnswer {
+	width: 8%;
+	float: left;
+}
+
+div.content {
+	width: 92%;
+	float: left;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #C6CBCB;
+	padding-bottom: 25px;
+}
+
+.iconItem {
+	width: 25px;
+	margin-top: 20px;
+	margin-left: 20px;
+}
+
+div.comment {
+	padding-bottom: 5px;
+	margin: 15px 0px;
+	margin-bottom: 0px;
+	overflow: hidden;
+	word-wrap : break-word; 
+	white-space: normal;
+	clear:both;
+	font-size: 10pt;
+}
+/*评论用户*/
+div.tag {
+	margin: 20px 0px;
+	margin-bottom: 3px;
+	float: left;
+}
+
+div.sub_comment {
+	border-style: solid;
+	border-width: 1px;
+	background-color: gray;
+}
+
+.content .tag strong {
+	font-size: 1.3em;
+	font-weight: 100;
+	color: #707575;
+}
+
+.courseName {
+	font-size: 1.2em;
+	color: #4B4C4D;
+	font-weight: bold;
+	overflow: hidden;
+	word-wrap: break-word; 
+	white-space: normal;
+	clear:both;
+}
+
+.question {
+	margin-top: 5px;
+	overflow: hidden;
+	word-wrap: break-word; 
+	white-space: normal;
+	clear:both;
+	font-size: 8pt;
+}
+
+.question a {
+	color: #003FD5;
+}
+
+small {
+	color: #888888;
+}
+
+.time {
+	float: right;
+}
+
+.time small {
+	float: left;
+}
+
+.time a {
+	float: right;
+}
+
+.userName {
+	float: left;
+}
+
+.qrCode {
+	text-align: center;
+}
+
+.qrImg {
+	width: 15%;
+	margin-top: 50px;
+}
+
+.modal-dialog {
+	margin-top: 130px;
+}
+
+@media (max-width: 1200px){
+	.navInfo li {
+		margin-left: 25px;
+		font-size: 11pt;
+	}
+
+	.searchForm {
+		margin-left: 24%;
+	}
+
+	.iconItem {
+		margin-left: 15px;
+	}
+}
+
+@media (max-width: 950px){
+	.navInfo li {
+		margin-left: 10px;
+	}
+
+	.searchForm {
+		margin-left: 20%;
+	}
+	.iconItem {
+		margin-left: 0px;
+	}
+}
+
+
+@media (max-width: 850px){
+	.navInfo li {
+		margin-left: 4px;
+	}
+	.searchForm {
+		margin-left: 16%;
+	}
+	.iconItem {
+		margin-left: 0px;
+	}
+}
+
+/*小尺寸终端解析样式，如移动端*/
+@media (max-width: 768px){
+
+	.modal-dialog {
+		margin-top: 80px;
+	}
+	.navbar-header img {
+		width: 100%;
+		height: 100%;
+	}
+
+	.navbar-brand {
+		margin-left: 5px;
+	}
+
+	.container {
+		width: 100%;
+		margin-top:55px;
+	}
+
+	.navBar {
+		height: 50px;
+		background-color: rgba(10, 10, 10, 0.9);
+	}
+
+	.navBar img{
+		display:block;
+		margin:auto;
+	}
+
+	.navBar a {
+		text-align:center;
+		color: white;
+		font-size: 10pt;
+	}
+	.navbar-header {
+		height: 100%;
+		margin-left: 12%;
+		margin-top: 0px;
+		overflow: hidden;
+	}
+
+	.navbar-header {
+		width: 100%;
+		margin: 0;
+	}
+
+	.navbar-header img {
+		width: 140px;
+		margin-top: 5px;
+		margin-left: 5px;
+	}
+
+	.searchBox {
+		height: 80px;
+		padding: 10px;
+	}
+	.input-group {
+		margin: auto;
+		width: 80%;
+		height: 35px;
+	}
+
+	.input-group-btn, .form-control {
+		height: 35px;
+		margin: 0px;
+	}
+
+	.input-group-btn .btnSubmit {
+		height: 35px;
+		width: 70px;
+		font-size: 12pt;
+	}
+
+	.searchForm {
+		margin: auto;
+		width: 100%;
+	}
+	.navInfo {
+		width: 100%;
+		margin: auto;
+	}
+	#bs-example-navbar-collapse-1 {
+		height: 100px;
+		background-image:-webkit-linear-gradient(to bottom, black, black);
+		background-image:linear-gradient(to bottom, black, black);
+		opacity: 0.8;
+	}
+	.homeButton, .listButton, .aboutButton, .feedbackButton, .collegeList {
+		border-bottom: 1px solid #272822;
+	}
+
+	.navbar-default .navbar-nav .homeButton > a {
+		font-weight: 900;
+		color: white;
+	}
+
+	/*空白*/
+	.blank_2 {
+		height: 20px;
+	}
+	.talkSquare {
+		width: 100%;
+		border-width: 0px;
+	}
+	.talkSquareTitle {
+		height: 30px;
+	}
+	.titleIconAsk img {
+		width: 20px;
+		margin-bottom: -3px;
+	}
+
+	.newMoment {
+		font-size: 14pt;
+	}
+	.rightPart {
+		margin-top: 0px;
+		width: 100%;
+		padding: 0px 10px;
+	}
+	.blackBar {
+		display: none;
+	}
+	.iconItem {
+		width: 20px;;
+		margin-left: 5px;
+	}
+	.courseName {
+		font-size: 1.1em;
+		color: black;
+		font-weight: bold;
+		word-wrap : break-word;
+	}
+	.question {
+		margin-top: 5px;
+		word-wrap : break-word; 
+	}
+	.content .tag strong {
+		font-size: 1.2em;
+		font-weight: 100;
+	}
+
+	.qrImg {
+		width: 40%;
+	}
+
+	#bs-example-navbar-collapse-1 .navInfo .homeButton {
+		display: none;
+	}
+
+	#bs-example-navbar-collapse-1 .navInfo .listButton {
+		display: none;
+	}
+
+	#bs-example-navbar-collapse-1 .navInfo .collegeList {
+		display: none;
+	}
+
+	.navInfoItem {
+		display: block;
+		background-color: #D8FFBC;
+		width: 100%;
+		height: 30px;
+		margin-bottom: 5px;
+	}
+
+	.homeButtonItem, .listButtonItem, .collegeListItem {
+		width: 20%;
+		float: left;
+		margin-left: 10%;
+		margin-top: 5px;
+		text-align: center;
+	}
+
+	.homeButtonItem a, .listButtonItem a, .collegeListItem a{
+		color: #597A64;
+	}
+
+	.collegeListItem {
+		margin-right: 10%;
+	}
+
+	.homeButtonItem a {
+		color: #000000;
+		font-weight: 900;
+	}
+
+/* 	.navBar {
+		background-color: black;
+		position: fixed;
+    	top: 50px;
+    	width: 100%;
+    	} */
+/* 	div.searchBox {
+		margin-top: 50px
+		} */
+}
+
+.navbar-brand {
+	padding-bottom: 1px;
+	padding-top: 0px;
+	margin-left: -15px;
+}
+
+	/*填充整个浏览器可视区域*/
+.row {
+	margin: 0px 0px;
+}
+
+.column {
+	padding: 0px 0px;
+}
+
+
+.modal-content p {
+	padding: 15px;
+	font-size: 12pt;
+}
+
+	/*页脚*/
+.footer {
+	text-align: center;
+	width: 100%;
+	height: 40px;
+}
+
+.qrAndFooter {
+	width: 100%;
+}
+
+
+.no_dynamic {
+	font-size: 12pt;
+	text-align: center;
+	width: 100%;
+}

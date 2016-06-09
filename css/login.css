@@ -1,0 +1,126 @@
+body {
+    margin: 0;
+    background: url("../images/bg.png") center center no-repeat #FAFAFA;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: Arial, STXihei, STHeiti;
+}
+
+.container {
+    margin: auto;
+    max-width: 550px;
+    min-width: 300px;
+    text-align: center;
+}
+
+.header {
+    width: 100%;
+    margin: auto;
+    position: relative;
+    margin-top: 130px;
+    margin-bottom: 120px;
+}
+
+.header img {
+    width: 120%;
+    overflow: auto;
+    margin: auto;
+}
+
+.slogan {
+    color: #fff;
+    font-size: 10pt;
+    letter-spacing: 2px;
+    margin: 10px;
+}
+
+.loginBox {
+    width: 100%;
+    margin: auto;
+    position: relative;
+    margin-top: -30px;
+}
+
+.loginBtn {
+    width: 85%;
+    margin: auto;
+    margin-top: 20px;
+    /*垂直居中*/
+    line-height: 42.642px;
+    font-size: 18pt;
+    font-weight: 100;
+    color: #fff;
+    letter-spacing: 1px;
+    opacity: 0.9;
+}
+
+.qqBtn {
+    background: #66BA9A;
+    border: 1px #66BA9A solid;
+    border-radius: 2px;
+}
+
+.safeInstruction {
+    margin-top: 5px;
+    color: #D1C8CF;
+    font-size: 8pt;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.safeInstruction img {
+    width: 10px;
+    height: 10px;
+    line-height: 10px;
+}
+
+#safeInfo {
+    width: 100%;
+    text-align:justify;
+    text-justify:inter-ideograph;
+    color: #D1C8CF;
+    font-size: 7pt;
+    margin-top: 7px;
+}
+
+.safeInfoHide {
+    display: none;
+}
+
+.safeInfoShow {
+    display: block;
+}
+
+.strollBtn {
+    margin-top: 50px;
+    border: 1px #fff solid;
+    border-radius: 3px;
+}
+
+.strollBtn:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.loginBox a {
+    text-decoration: none;
+}
+
+
+.footer {
+    display: block;
+    font-size: 8pt;
+}
+
+.footer img {
+    width: 15px;
+}
+
+.blank {
+    height: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    .footer {
+        display: none;
+    }
+}

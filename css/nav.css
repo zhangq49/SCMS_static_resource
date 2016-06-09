@@ -1,0 +1,186 @@
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+.navBar {
+	width: 100%;
+	height: 100px;
+	overflow: hidden;
+	/* 	background-image:-webkit-linear-gradient(to bottom, #EFF0F1, #BEBEC2);
+        background-image:linear-gradient(to bottom,#EFF0F1,#BEBEC2); */
+}
+
+.logoImg, .navInfo {
+	padding-top: 25px;
+	width: 50%;
+	display: block;
+	float: left;
+}
+
+.logoImg {
+	padding-left: 110px;
+}
+
+.navInfo {
+	padding-top: 65px;
+	padding-right: 110px;
+}
+
+.navInfo .aboutButton a {
+	color: #A2A2A2;
+}
+
+.navInfo .aboutButton a:hover {
+	color: #4E4F50;
+	font-weight: bolder;
+	text-decoration: none;
+}
+
+.logoImg img {
+	width: 200px;
+	height: 70px;
+}
+
+.navInfo .aboutButton {
+	float: right;
+}
+
+.collegeList {
+	width: 100%;
+	height: 400px;
+	background-color: #D8FFBB;
+	padding: 20px 150px;
+}
+
+.gdwywmInfo {
+	padding-left: 50px;
+}
+
+.qrCode {
+	text-align: center;
+}
+
+.qrImg {
+	width: 12%;
+	margin-top: 50px;
+}
+
+.modal-content p {
+	padding: 15px;
+	font-size: 12pt;
+}
+
+.modal-dialog {
+	margin-top: 130px;
+}
+
+/*页脚*/
+.footer {
+	text-align: center;
+	width: 100%;
+	height: 40px;
+}
+
+
+
+.collegeInfo {
+	/*text-align: center;*/
+	margin-top: 80px;
+	letter-spacing: 5px;
+	font-size: 14pt;
+}
+.collegeInfo a {
+	color: #626E57;
+}
+
+.collegeInfo a:hover {
+	color: #313131;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+
+/*小尺寸终端解析样式，如移动端*/
+@media (max-width: 768px){
+	.navBar {
+		height: 60px;
+	}
+
+	.logoImg {
+		padding-left: 8px;
+		padding-top: 10px;
+	}
+
+	.logoImg img {
+		width: 120px;
+		height: 50px;
+	}
+
+	.navInfo {
+		padding-right: 17px;
+		padding-top: 35px;
+	}
+
+	.collegeList {
+		padding: 50px 20px;
+		height: 400px;
+	}
+	.collegeInfo {
+		width: 100%;
+		margin-top: 0px;
+		margin-bottom: 15px;
+		text-align: left;
+		padding-left: 13%;
+	}
+
+	.qrImg {
+		width: 40%;
+		margin-top: 50px;
+	}
+
+	.modal-dialog {
+		margin-top: 100px;
+	}
+}
+
+div.tips {
+	text-align: center;
+	display: none;
+}
+
+
+/*loginform style*/
+
+.loginForm {
+	max-width: 400px;
+	min-width: 300px;
+	height: 300px;
+	margin: auto;
+	background: rgba(255, 255, 255, 0.5);
+	text-align: center;
+	border-radius: 5px;
+}
+
+.loginForm h2 {
+	opacity: 0.8;
+	padding: 10px;
+	color: #3c3c3c;
+	font-family: Arial, sans-serif;
+	border-bottom: #9A9A9A 1px solid;
+}
+
+.loginForm input {
+	margin-bottom: 10px;
+}
+
+.keepBrowse {
+	margin-top: 20px;
+}
+
+.keepBrowse a {
+	text-decoration: underline;
+}
+
+
+

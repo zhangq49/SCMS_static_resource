@@ -1,0 +1,134 @@
+.newsfeedItem {
+    margin-bottom: 5.5px;
+}
+
+.detailedNewsfeed {
+    padding-top: 16px;
+    margin-bottom: 2px;
+}
+
+.firstRow .time {
+    top: 20px;
+}
+
+.firstRow .starScores {
+    top: 44px;
+    left: 22.4px;
+}
+
+.courseCommentBlock .secondRow {
+    margin-top: 28px;
+}
+
+.courseAskBlock .secondRow .questionDetailed {
+    color: #717071;
+    font-size: 10pt;
+    margin-top: 5px;
+}
+
+
+/* 请登录弹窗 */
+.md-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    max-width: 630px;
+    min-width: 320px;
+    height: auto;
+    z-index: 2000;
+    text-align: center;
+}
+
+.md-content {
+    color: #fff;
+    background: #031713;
+    opacity: 0.9;
+    position: relative;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+
+.md-content > div {
+    padding: 15px 40px 30px;
+    margin: 0;
+    font-weight: 300;
+    font-size: 1.15em;
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+
+.md-content > div p {
+    margin: 0;
+    padding: 10px 0;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+div.md-close {
+    float: left;
+    margin: auto;
+    width: 50%;
+}
+
+#md-confirm {
+    float: left;
+    margin-left: 20px;
+}
+
+#modalLogin button, #modalEmptyField button, #aboutDialog button {
+    width: 60px;
+    height: 30px;
+    border-radius: 3px;
+    border: 0px;
+    background-color: rgba(255, 255, 255, 0.8);
+    font-size: 10pt;
+    cursor: pointer;
+}
+
+#modalLogin button:hover, #modalEmptyField button:hover, #aboutDialog button:hover{
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+#modalEmptyField, #aboutDialog {
+    text-align: center;
+}
+
+#aboutDialog {
+    text-align:justify;
+    text-justify:inter-ideograph;
+    font-size: 11pt;
+}
+
+#aboutDialog div.md-close {
+    width: 100%;
+    text-align: center;
+}
+
+#modalEmptyField .md-close, #aboutDialog .md-close {
+    float: none;
+    margin: auto;
+}
+
+#modalEmptyField button, #aboutDialog button {
+    float: none;
+}
+
+.md-hide {
+    -webkit-transform: translateX(-50%) translateY(-50%) scale(0);
+    -moz-transform: translateX(-50%) translateY(-50%) scale(0);
+    -ms-transform: translateX(-50%) translateY(-50%) scale(0);
+    transform: translateX(-50%) translateY(-50%) scale(0);
+    opacity: 0;
+    -webkit-transition: all 0.3s, ;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.md-show {
+    -webkit-transform: translateX(-50%) translateY(-50%) scale(1);
+    -moz-transform: translateX(-50%) translateY(-50%) scale(1);
+    -ms-transform: translateX(-50%) translateY(-50%) scale(1);
+    transform: translateX(-50%) translateY(-50%) scale(1);
+    opacity: 1;
+}

@@ -1,0 +1,577 @@
+body {
+    margin: 0;
+    background: #E9E9EE;
+    font-size: 1em;
+    font-family: Arial, STXihei, STHeiti;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* body所有子元素最大和最小宽度 */
+body > div {
+    margin: auto;
+    min-width: 300px;
+    max-width: 550px;
+}
+
+.navBar {
+    width: 100%;
+    height: 46.2px;
+    background: #fff;
+    overflow: hidden;
+}
+/* 导航栏 */
+.navBar img:first-child {
+    width: 151.8px;
+    float: left;
+    margin-top: 11px;
+    margin-left: 21.9px;
+}
+
+.navBar img:nth-child(2) {
+    width: 24px;
+    float: right;
+    margin-top: 15px;
+    margin-right: 21.9px;
+    cursor: pointer;
+}
+/* 默认隐藏掉导航下拉列表,设置元素高度为0 */
+.navList {
+    width: 100%;
+    color: #fff;
+    font-size: 12pt;
+    text-align: center;
+    letter-spacing: 5px;
+    background: #66BA9A;
+    overflow: hidden;
+    position: absolute;
+    z-index: 100;
+    transition: max-height 0.6s, opacity 0.6s;
+    -webkit-transition: max-height 0.6s, opacity 0.6s;
+    -moz-transition: max-height 0.6s, opacity 0.6s;
+}
+
+.showList {
+    max-height: 300px;
+    opacity: 1;
+}
+
+.hideList {
+    max-height: 0;
+    opacity: 0.9;
+}
+
+.navList ul {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.navList ul li {
+    list-style: none;
+    width: 85%;
+    margin: auto;
+    height: 41px;
+    line-height: 46.3px;
+    opacity: 0.9;
+    border-bottom: 1px #fff solid;
+}
+
+.navList ul li a {
+    color: #fff;
+}
+
+.header {
+    position: relative;
+}
+
+/*个人主页和课程列表切换栏*/
+.personAndCourseBar {
+    height: 36px;
+    background: #66BA9A;
+    border-radius: 3px;
+    padding: 0;
+    width: 100%;
+    position: relative;
+}
+
+.personAndCourseBarFixed {
+    height: 36px;
+    background: #66BA9A;
+    border-radius: 3px;
+    padding: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    top: 0px;
+    min-width: 300px;
+    max-width: 550px;
+}
+
+#personAndCourseBar a span {
+    position: relative;
+    margin-top: 0px;
+}
+
+#personAndCourseBar a span img {
+    width: 13.1px;
+    position: absolute;
+    top: 0px;
+    left: -19px;
+}
+
+.personBtn, .courseBtn {
+    width: 49.5%;
+    font-size: 13pt;
+    line-height: 36px;
+    float: left;
+    text-align: center;
+    letter-spacing: 4px;
+    color: #fff;
+    cursor: pointer;
+}
+
+#dividerLine {
+    background: #fff;
+    width: 1px;
+    height: 23.6px;
+    margin-top: 5px;
+    float: left;
+}
+
+/* 搜索和当前位置栏 */
+.searchAndLocationBox {
+    width: 100%;
+    /*     height: 87.4px; */
+    background: #fff;
+    padding-top: 16.4px;
+    padding-bottom: 38px;
+    position: relative;
+}
+
+/* 搜索栏 */
+.searchBar {
+    width: 88%;
+    height: 33px;
+    border: 1px solid rgba(157, 157, 158, 0.6);
+    border-radius: 3px;
+    margin: auto;
+}
+
+.searchBar form input:first-child {
+    float: left;
+    width: 70%;
+    margin-top: 2px;
+    margin-left: 5px;
+    font-size: 11pt;
+    padding: 5px 5px;
+    /*     border: 1px solid rgba(255, 255, 255, 0.4); */
+    border: 0px;
+    background-color: rgba(255, 255, 255, 0);
+    color: #C6C7C7;
+}
+
+.searchBar form input:nth-child(2) {
+    float: right;
+    margin-right: 10px;
+    margin-top: 5px;
+    width: 25px;
+}
+
+/*当前学校*/
+.searchAndLocationBox a {
+    position: absolute;
+    top: 64px;
+    left: 55px;
+    font-size: 10pt;
+    color: #AAB48A;
+}
+
+.searchAndLocationBox a img {
+    width: 12px;
+    position: absolute;
+    left: -20px;
+    top: 0px;
+}
+
+.searchAndLocationBox a span {
+    color: #86CCD9;
+}
+
+/*跳转页面通用样式*/
+.goToAnotherPage {
+    height: 58px;
+    line-height: 58px;
+    width: 100%;
+    background: #fff;
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+
+.goToAnotherPage .rightArrow {
+    width: 13px;
+    float: right;
+    margin-top: 20px;
+    margin-right: 24.4px;
+}
+
+.goToAnotherPage .dynamicInfo {
+    float: left;
+    margin-left: 24.2px;
+}
+
+/* 热门课程栏 和 课程列表排序栏，共用样式*/
+.popularCourses .title, .courseList .sortBar{
+    background-color: #fff;
+    color: #158778;
+    font-size: 14pt;
+    letter-spacing: 1px;
+    margin-top: 5.5px;
+    padding: 12px 24.2px;
+    border-bottom: 0.5px solid rgba(113, 112, 113, 0.3);
+}
+
+/* 图标， 公用样式 */
+.popularCourses .popBtn{
+    float: left;
+    margin-left: 24.2px;
+    margin-top: 11px;
+    width: 32px;
+}
+
+/* 课程信息， 共用样式 */
+.popularCourses .courseInfo {
+    float: left;
+    margin-left: 11px;
+    margin-top: -10px;
+    position: relative;
+    width: 75%;
+    /*   不换行   */
+    white-space: nowrap;
+}
+
+.courseList .courseInfo {
+    float: left;
+    margin-left: 68px;
+    margin-top: -10px;
+    position: relative;
+    width: 75%;
+    /*   不换行   */
+    white-space: nowrap;
+}
+
+/* 课程名称， 共用样式 */
+.popularCourses .courseName, .courseList .courseName{
+    position: absolute;
+    font-size: 12pt;
+    letter-spacing: 1px;
+    color: #031713;
+    /*   多余字显示为省略号   */
+    width: 92%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.popularCourses .courseCredit, .popularCourses .courseTeacher,
+.courseList .courseCredit, .courseList .courseTeacher{
+    position: absolute;
+    top : 24.8px;
+    left: 0px;
+    font-size: 9pt;
+    color: #717071;
+}
+
+.popularCourses .courseTeacher, .courseList .courseTeacher {
+    left: 0px;
+    width: 120px;
+    /*   不换行   */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* 课程排序栏 */
+.courseList .sortBar {
+    text-align: center;
+}
+
+.sortBarRelative {
+    position: relative;
+}
+
+.sortBarFixed {
+    position: fixed;
+    top: -6px;
+    width: 100%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box; /* Firefox */
+    -webkit-box-sizing: border-box; /* Safari */
+    z-index: 20;
+    min-width: 300px;
+    max-width: 550px;
+}
+
+.courseList .sortBar a {
+    color: #158778;
+    font-weight: 100;
+    font-size: 13.5pt;
+}
+
+.courseList .sortBar a img {
+    width: 10.8px;
+    margin-left: 5px;
+}
+
+.courseList .sortBar a:first-child {
+    display: block;
+    float: left;
+}
+
+.courseList .sortBar a:nth-child(3) {
+    display: block;
+    float: right;
+}
+
+.courseList .commentPic {
+    width: 30px;
+    position: absolute;
+    left: 23.5px;
+    top: 8px;
+}
+
+.courseList .courseItem {
+    position: relative;
+}
+
+.courseList .courseItem span {
+    float: left;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 28px;
+    position: absolute;
+    color: #fff;
+    left: 23.5px;
+    top: 9px;
+    font-size: 8pt;
+}
+
+.courseList .courseItem .smallNA {
+    margin-top: 2px;
+    font-size: 6pt;
+}
+
+/* 搜索结果样式 */
+.searchResWord {
+    background-color: #fff;
+    color: #158778;
+    font-weight: 700;
+    font-size: 14pt;
+    letter-spacing: 1px;
+    margin-top: 5.5px;
+    padding: 12px 24.2px;
+    border-bottom: 1px solid rgba(113, 112, 113, 0.6);
+}
+
+.resNum {
+    padding-left: 24.4px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box; /* Firefox */
+    -webkit-box-sizing: border-box; /* Safari */
+    height: 30px;
+    line-height: 30px;
+    color: #717071;
+}
+
+.searchRes {
+    position: relative;
+}
+
+.searchRes .courseInfo{
+    margin-left: 24.4px;
+}
+
+.searchRes .extraInfo {
+    position: absolute;
+    bottom: 0px;
+    height: 35px;
+    width: 75%;
+}
+
+.searchRes .extraInfo span {
+    position: relative;
+    font-size: 8pt;
+    color: #717071;
+    float: left;
+    width: 18%;
+    text-align: left;
+    height: 100%;
+    /*   不换行   */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.searchRes .extraInfo span:first-child {
+    width: 28%;
+}
+
+/* 无评论或提问时 */
+.loadDone {
+    height: 80px;
+    text-align: center;
+    padding-top: 20px;
+    color: #595757;
+    letter-spacing: 1px;
+    background: #fff;
+}
+
+.loadDone .tip2 {
+    margin-top: 15px;
+    font-size: 9pt;
+}
+
+.loadDone .tip2 a {
+    color: #1B94D3;
+}
+
+/* 加载更多 */
+.loadMore {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background: #fff;
+    margin-top: -7px;
+}
+
+.loadAnimation {
+    background: #fff;
+    display: inline-block;
+    margin-bottom: -2px;
+    margin-right: 8px;
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    opacity: 0.9;
+    box-shadow: rgba(112, 112, 112, 0.8) -4px -4px 3px -3px;
+    animation: rotate 1s infinite linear;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotateZ(0deg);
+    }
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
+
+/* 请登录弹窗 */
+.md-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    max-width: 630px;
+    min-width: 320px;
+    height: auto;
+    z-index: 2000;
+    text-align: center;
+}
+
+.md-content {
+    color: #fff;
+    background: #031713;
+    opacity: 0.9;
+    position: relative;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+
+.md-content > div {
+    padding: 15px 40px 30px;
+    margin: 0;
+    font-weight: 300;
+    font-size: 1.15em;
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+
+.md-content > div p {
+    margin: 0;
+    padding: 10px 0;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+div.md-close {
+    float: left;
+    margin: auto;
+    width: 50%;
+}
+
+#md-confirm {
+    float: left;
+    margin-left: 20px;
+}
+
+#modalLogin button, #modalEmptyField button, #aboutDialog button {
+    width: 60px;
+    height: 30px;
+    border-radius: 3px;
+    border: 0px;
+    background-color: rgba(255, 255, 255, 0.8);
+    font-size: 10pt;
+    cursor: pointer;
+}
+
+#modalLogin button:hover, #modalEmptyField button:hover, #aboutDialog button:hover{
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+#modalEmptyField, #aboutDialog {
+    text-align: center;
+}
+
+#aboutDialog {
+    text-align:justify;
+    text-justify:inter-ideograph;
+    font-size: 11pt;
+}
+
+#aboutDialog div.md-close {
+    width: 100%;
+    text-align: center;
+}
+
+#modalEmptyField .md-close, #aboutDialog .md-close {
+    float: none;
+    margin: auto;
+}
+
+#modalEmptyField button, #aboutDialog button {
+    float: none;
+}
+
+.md-hide {
+    -webkit-transform: translateX(-50%) translateY(-50%) scale(0);
+    -moz-transform: translateX(-50%) translateY(-50%) scale(0);
+    -ms-transform: translateX(-50%) translateY(-50%) scale(0);
+    transform: translateX(-50%) translateY(-50%) scale(0);
+    opacity: 0;
+    -webkit-transition: all 0.3s, ;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.md-show {
+    -webkit-transform: translateX(-50%) translateY(-50%) scale(1);
+    -moz-transform: translateX(-50%) translateY(-50%) scale(1);
+    -ms-transform: translateX(-50%) translateY(-50%) scale(1);
+    transform: translateX(-50%) translateY(-50%) scale(1);
+    opacity: 1;
+}
